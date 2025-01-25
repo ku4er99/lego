@@ -76,7 +76,6 @@ func (c Client) doFormRequest(ctx context.Context, formData url.Values, fragment
 	// ----- LOG: Request Data -----
 	log.Println("===== REG.RU REQUEST =====")
 	log.Printf("Endpoint: %s\n", endpoint.String())
-	log.Printf("Form data (BE CAREFUL: includes credentials!): %s\n", formData.Encode())
 	log.Println("==========================")
 
 	// Build the request
